@@ -1,24 +1,68 @@
 <html>
-    <head>
-        <title>PAV II Ejercicio 4</title>
-    </head>
-    <body>
-        <form method="post" action="http://jkorpela.fi/cgi-bin/echo.cgi">
-            <label>Texto: </label><input type="text" name="texto">
-            <br>
-            <label>Password:</label><input type="password" name="password">
-            <br>
-            <input type="submit" name="Enviar">
-            <br><br>
-            <input type="button" name="boton" value="Boton">
-            <br><br>
-            <label>Radio I </label><input type="radio" name="rbt">
-            <br>
-            <label>Radio II </label><input type="radio" name="rbt">
-            <br><br>
-            <label>Unica Check</label><input type="checkbox" name="cbx">
-            <br><br>
-            <textarea rows="5" cols="50" name="txtArea" placeholder="Text Area"></textarea>
-        </form>
-    </body>
+  <head>
+    <title>PAV II Ejercicio 4</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  </head>
+  <body>
+    <p style="text-align: right"><a href="/index.html">Volver</a></p>
+    <form method="post" action="http://jkorpela.fi/cgi-bin/echo.cgi">
+      <table>
+        <tr>
+          <td><label>Texto: </label></td>
+          <td>
+            <input type="text" name="texto" placeholder="Ingrese Texto aqui" />
+          </td>
+        </tr>
+        <tr>
+          <td><label>Password:</label></td>
+          <td>
+            <input
+              type="password"
+              name="password"
+              placeholder="Aqui va una contraseña"
+            />
+          </td>
+        </tr>
+        <tr>
+            <td>El botón de submit envia el contenido del formulario</td>
+            <td>En cambio el input type=button debe ser configurado</td>
+        </tr>
+        <td><input type="submit" name="Enviar" /></td>
+        <td><input type="button" name="boton" value="Botón" /></td>
+        <tr>
+          <td colspan="2">Se puede elegir una opción, pero no ambas</td>
+        </tr>
+        <tr>
+          <td><label for="rbtI">Radio I </label></td>
+          <td><input type="radio" id="rbtI" name="rbt" /></td>
+        </tr>
+        <tr>
+          <td><label for="rbtII">Radio II </label></td>
+          <td><input type="radio" id="rbtII" name="rbt" /></td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            Las checkbox puede ser seleccionadas al mismo tiempo
+          </td>
+        </tr>
+        <tr>
+          <td><label>Primera Check</label></td>
+          <td><input type="checkbox" name="cbx" /></td>
+        </tr>
+        <tr>
+          <td><label>Segunda Check</label></td>
+          <td><input type="checkbox" name="cbx" /></td>
+        </tr>
+        <tr>
+          <td>Por ultimo una text Area definida con 5 lineas y 50 columnas</td>
+        </tr>
+      </table>
+      <textarea
+        rows="5"
+        cols="50"
+        name="txtArea"
+        placeholder="Text Area"
+      ></textarea>
+    </form>
+  </body>
 </html>
